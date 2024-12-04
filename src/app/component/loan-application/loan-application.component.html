@@ -1,0 +1,42 @@
+<div class="loan-application-container">
+    <!-- Back Link -->
+    <a routerLink="/home" class="back-link">
+        <mat-icon>arrow_back</mat-icon> Back to Home
+      </a>
+    <h1 class="page-title">Apply for Loan</h1>
+  
+    <mat-card class="loan-card">
+      <form (ngSubmit)="applyForLoan(loanAmount, loanInterestRate, loanTenure)" class="loan-form">
+        <div class="form-group">
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Account ID</mat-label>
+            <input matInput type="number" [(ngModel)]="accountId" name="accountId" required>
+          </mat-form-field>
+        </div>
+  
+        <div class="form-group">
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Loan Amount</mat-label>
+            <input matInput type="number" [(ngModel)]="loanAmount" name="loanAmount" required>
+          </mat-form-field> <!-- Corrected the closing tag here -->
+        </div>
+  
+        <div class="form-group">
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Interest Rate (%)</mat-label>
+            <input matInput type="number" [(ngModel)]="loanInterestRate" name="loanInterestRate" required>
+          </mat-form-field>
+        </div>
+  
+        <div class="form-group">
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Tenure (Months)</mat-label>
+            <input matInput type="number" [(ngModel)]="loanTenure" name="loanTenure" required>
+          </mat-form-field>
+        </div>
+  
+        <button mat-raised-button color="primary" type="submit" class="submit-button">Apply for Loan</button>
+      </form>
+    </mat-card>
+  </div>
+  

@@ -1,0 +1,66 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .account-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .account-table th, .account-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .account-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .account-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .form-section {
+    margin-bottom: 30px;
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button.full-width {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+  }
+
+  .back-link {
+    display: flex;
+    align-items: center;
+    color: #3f51b5;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .back-link mat-icon {
+    margin-right: 8px;
+  }
+  
+  .back-link:hover {
+    color: #303f9f;
+  }
+  

@@ -1,0 +1,17 @@
+<h2>Check Balance</h2>
+
+<form (ngSubmit)="checkBalance()">
+  <mat-form-field>
+    <input matInput placeholder="Username" [(ngModel)]="accountHolderName" name="username" required>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Check Balance</button>
+</form>
+
+<div *ngIf="balance !== null">
+  <p>Balance: {{ balance }}</p>
+</div>
+
+<div *ngIf="errorMessage">
+  <p style="color: red;">{{ errorMessage }}</p>
+</div>

@@ -1,0 +1,30 @@
+
+<div class="container">
+        <!-- Back Link -->
+        <a routerLink="/home" class="back-link">
+            <mat-icon>arrow_back</mat-icon> Back to Home
+          </a>
+    <h1>Account Details</h1>
+    
+    <!-- Account Details Table -->
+    <table class="account-table">
+      <thead>
+        <tr>
+          <th>Account Number</th>
+          <th>Account Holder Name</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dat of acc">
+          <td>{{ dat.accountNumber }}</td>
+          <td>{{ dat.accountHolderName }}</td>
+          <td>{{ dat.amount | currency }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+ 
+  
+
+  

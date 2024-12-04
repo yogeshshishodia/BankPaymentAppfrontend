@@ -1,0 +1,50 @@
+<div class="deposit-container">
+    <!-- Back Link -->
+    <a routerLink="/home" class="back-link">
+      <mat-icon>arrow_back</mat-icon> Back to Home
+    </a>
+  
+    <mat-card class="deposit-card">
+      <mat-card-header>
+        <mat-card-title class="deposit-title">Deposit Funds</mat-card-title>
+        <mat-card-subtitle class="deposit-subtitle">Make a deposit into your account.</mat-card-subtitle>
+      </mat-card-header>
+  
+      <mat-card-content>
+        <form (ngSubmit)="deposit()" class="deposit-form">
+          <div class="form-group">
+            <mat-form-field appearance="fill" class="full-width">
+              <mat-label>Account ID</mat-label>
+              <input matInput type="number" [(ngModel)]="acc.accountNumber" name="accountNumber" required>
+            </mat-form-field>
+          </div>
+  
+          <div class="form-group">
+            <mat-form-field appearance="fill" class="full-width">
+              <mat-label>Deposit Amount</mat-label>
+              <input matInput type="number" [(ngModel)]="acc.amount" name="amount" required>
+            </mat-form-field>
+          </div>
+  
+          <button mat-raised-button color="primary" type="submit" class="submit-button">Deposit</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card class="info-card">
+      <mat-card-header>
+        <mat-card-title>Why Deposit?</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="info-description">
+          <h3>Easy Access to Your Funds</h3>
+          <p>Depositing funds into your account provides quick and easy access to your balance, making it simpler to manage your money.</p>
+        </div>
+        <div class="info-description">
+          <h3>Instant Processing</h3>
+          <p>Your deposit is processed immediately and reflects in your account without delay.</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

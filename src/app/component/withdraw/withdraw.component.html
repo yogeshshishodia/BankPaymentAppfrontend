@@ -1,0 +1,50 @@
+<div class="withdraw-container">
+    <!-- Back Link -->
+    <a routerLink="/home" class="back-link">
+      <mat-icon>arrow_back</mat-icon> Back to Home
+    </a>
+  
+    <mat-card class="withdraw-card">
+      <mat-card-header>
+        <mat-card-title class="withdraw-title">Withdraw Funds</mat-card-title>
+        <mat-card-subtitle class="withdraw-subtitle">Withdraw funds from your account.</mat-card-subtitle>
+      </mat-card-header>
+  
+      <mat-card-content>
+        <form (ngSubmit)="withdraw()" class="withdraw-form">
+          <div class="form-group">
+            <mat-form-field appearance="fill" class="full-width">
+              <mat-label>Account ID</mat-label>
+              <input matInput type="number" [(ngModel)]="acc.accountNumber" name="accountNumber" required>
+            </mat-form-field>
+          </div>
+  
+          <div class="form-group">
+            <mat-form-field appearance="fill" class="full-width">
+              <mat-label>Withdrawal Amount</mat-label>
+              <input matInput type="number" [(ngModel)]="acc.amount" name="withdrawAmount" required>
+            </mat-form-field>
+          </div>
+  
+          <button mat-raised-button color="primary" type="submit" class="submit-button">Withdraw</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card class="info-card">
+      <mat-card-header>
+        <mat-card-title>Why Withdraw?</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="info-description">
+          <h3>Access Your Money</h3>
+          <p>Withdrawing funds gives you quick access to cash for your immediate needs. It's an easy way to manage your finances.</p>
+        </div>
+        <div class="info-description">
+          <h3>Convenient and Instant</h3>
+          <p>Your withdrawal is processed immediately, and the money is available in your hands without delay.</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

@@ -1,0 +1,103 @@
+.back-link {
+    display: flex;
+    align-items: center;
+    color: #3f51b5;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .back-link mat-icon {
+    margin-right: 8px;
+  }
+  
+  .back-link:hover {
+    color: #303f9f;
+  }
+  
+  .deposit-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .deposit-card {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .deposit-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3f51b5;
+  }
+  
+  .deposit-subtitle {
+    font-size: 1.3rem;
+    color: #757575;
+  }
+  
+  .deposit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .submit-button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info-card {
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card mat-card-header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px;
+  }
+  
+  .info-description {
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .info-description h3 {
+    font-size: 1.5rem;
+    color: #3f51b5;
+    margin-bottom: 10px;
+  }
+  
+  .info-description p {
+    font-size: 1rem;
+    color: #757575;
+  }
+  
+  @media (max-width: 768px) {
+    .submit-button {
+      width: 100%;
+    }
+  }
+  
